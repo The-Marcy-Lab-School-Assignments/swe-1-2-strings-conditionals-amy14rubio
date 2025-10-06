@@ -10,7 +10,7 @@ describe('Bonus tests - No Scores', () => {
   afterEach(jest.clearAllMocks);
 
   // TODO: Remove .skip when you're ready to test
-  it.skip('measureRainSwitch - logs the right message based on rain amount', () => {
+  it('measureRainSwitch - logs the right message based on rain amount', () => {
     measureRainSwitch(0);
     expect(log).toHaveBeenNthCalledWith(1, 'drought');
     measureRainSwitch(1);
@@ -32,7 +32,7 @@ describe('Bonus tests - No Scores', () => {
   });
 
   // TODO: Remove .skip when you're ready to test
-  it.skip('rounder - returns the right number based on rounding setting', () => {
+  it('rounder - returns the right number based on rounding setting', () => {
     expect(rounderSwitch(1.0, 'up')).toBe(1);
     expect(rounderSwitch(1.1, 'up')).toBe(2);
     expect(rounderSwitch(3.9, 'up')).toBe(4);
